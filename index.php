@@ -8,7 +8,7 @@
 
 /**
  * Tells WordPress to load the WordPress theme and output it.
- * push ioio
+ * push ioio oo
  *
  * @var bool
  */
