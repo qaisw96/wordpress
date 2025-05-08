@@ -44,6 +44,8 @@ if (in_array($host, ['localhost', '127.0.0.1'])) {
 define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
 
+// hereeeeee syncc
+
 
 /**#@+
  * Authentication unique keys and salts.
