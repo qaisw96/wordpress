@@ -27,18 +27,18 @@
 // define( 'DB_CHARSET', 'utf8mb4' );
 // define( 'DB_COLLATE', '' );
 
-// $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 
 if (in_array($host, ['localhost', '127.0.0.1'])) {
-	define( 'DB_NAME', 'u191253903_root' );
-	define( 'DB_USER', 'u191253903_root' );
-	define( 'DB_PASSWORD', 'ASDasd#131517' );
-	define( 'DB_HOST', 'localhost' );
-} else {
     define('DB_NAME', 'wordpress');
     define('DB_USER', 'root');
     define('DB_PASSWORD', 'root');
     define('DB_HOST', 'localhost');
+} else {
+	define( 'DB_NAME', 'u191253903_root' );
+	define( 'DB_USER', 'u191253903_root' );
+	define( 'DB_PASSWORD', 'ASDasd#131517' );
+	define( 'DB_HOST', 'localhost' );
 };
 
 define('DB_CHARSET', 'utf8mb4');
