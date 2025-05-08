@@ -20,28 +20,26 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'u191253903_root' );
-define( 'DB_USER', 'u191253903_root' );
-define( 'DB_PASSWORD', 'ASDasd#131517' );
-define( 'DB_HOST', 'localhost' );
-define( 'DB_CHARSET', 'utf8mb4' );
-define( 'DB_COLLATE', '' );
+// define( 'DB_NAME', 'u191253903_root' );
+// define( 'DB_USER', 'u191253903_root' );
+// define( 'DB_PASSWORD', 'ASDasd#131517' );
+// define( 'DB_HOST', 'localhost' );
+// define( 'DB_CHARSET', 'utf8mb4' );
+// define( 'DB_COLLATE', '' );
 
 // $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 
-// if (in_array($host, ['localhost', '127.0.0.1'])) {
-//     // Local DB settings
-//     define('DB_NAME', 'wordpress');
-//     define('DB_USER', 'root');
-//     define('DB_PASSWORD', 'root');
-//     define('DB_HOST', 'localhost');
-// } else {
-//     // Production (Hostinger) DB settings
-//     define('DB_NAME', 'your_hostinger_db_name');
-//     define('DB_USER', 'your_hostinger_db_user');
-//     define('DB_PASSWORD', 'your_hostinger_db_password');
-//     define('DB_HOST', 'localhost'); // Usually still localhost on shared hosting
-// }
+if (in_array($host, ['localhost', '127.0.0.1'])) {
+	define( 'DB_NAME', 'u191253903_root' );
+	define( 'DB_USER', 'u191253903_root' );
+	define( 'DB_PASSWORD', 'ASDasd#131517' );
+	define( 'DB_HOST', 'localhost' );
+} else {
+    define('DB_NAME', 'wordpress');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_HOST', 'localhost');
+};
 
 define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
